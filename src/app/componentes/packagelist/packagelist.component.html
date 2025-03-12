@@ -5,9 +5,9 @@
     <div class="card" style="width: 18rem;" *ngFor="let paquete of paquetes">
         <div class="card-body">
             <h5 class="card-title">{{ paquete.nombre }}</h5>
-            <p class="card-text">{{ paquete.detalles }}</p>
+            <p class="card-text">Detalles: {{ paquete.detalles }}</p>
             <p class="card-text" style=color:crimson>${{ paquete.precio }}</p>
-            <a routerLink="/detallesViajes" class="btn btn-success">Más detalles de {{paquete.nombre}}</a>
+            <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Apartar Viaje a {{paquete.nombre}}</a>
         </div>
     </div>
 </div>

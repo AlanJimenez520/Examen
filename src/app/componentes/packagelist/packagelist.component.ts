@@ -14,5 +14,5 @@ import { CommonModule } from '@angular/common';
   `,
 })
 export class PackagelistComponent {
-  @Input() paquetes:{ nombre: string; detalles: string; precio: number }[] = [];
+  @Input() paquetes:{id:number, nombre: string; detalles: string; precio: number }[] = [];
 }
