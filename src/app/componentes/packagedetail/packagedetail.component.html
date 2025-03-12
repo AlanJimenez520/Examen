@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <div *ngIf="paquete" class="card">
+      <div class="card-header">
+        <h2>{{ paquete.nombre }}</h2>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ paquete.detalles }}</p>
+        <p class="card-text">
+          <strong>Precio:</strong> <span style="color: crimson;">${{ paquete.precio }}</span>
+        </p>
+        <a routerLink="/" class="btn btn-primary">Volver a la lista</a>
+      </div>
+    </div>
+  </div>
+  
